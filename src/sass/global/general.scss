@@ -1,0 +1,38 @@
+body {
+  max-width: 1366px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open-sans", "Arial", sans-serif;
+  color: #1F1E25;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1F1E25;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}

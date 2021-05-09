@@ -1,0 +1,32 @@
+import React from 'react';
+
+const Contacts = () => {
+  return (
+    <div className="contacts">
+      <ul className="contacts__list">
+        <li className="contacts__item">
+          <p className="contacts__item-name">Адрес</p>
+          <p className="contacts__item-value">Санкт-Петербург,
+набережная реки Карповки, дом 5</p>
+        </li>
+        <li className="contacts__item">
+          <p className="contacts__item-name">Режим работы</p>
+          <p className="contacts__item-value">Ежедневно, с 10:00 до 21:00</p>
+        </li>
+        <li className="contacts__item">
+          <p className="contacts__item-name">Телефон</p>
+          <a className="contacts__item-value" href="tel: 88003335599">8 (800) 333-55-99</a>
+        </li>
+        <li className="contacts__item">
+          <p className="contacts__item-name">E-mail</p>
+          <a className="contacts__item-value" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a>
+        </li>
+      </ul>
+      <div className="contacts__map">
+        Карта
+      </div>
+    </div>
+  );
+};
+
+export default Contacts;
