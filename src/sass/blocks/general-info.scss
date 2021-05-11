@@ -1,0 +1,116 @@
+.general-info {
+  max-width: 1190px;
+  margin: auto;
+  margin-top: 90px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.general-info__wrapper {
+  margin-left: 58px;
+  margin-top: -16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.general-info__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.general-info__list {
+  margin-top: 21px;
+  margin-left: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  &:nth-child(4) {
+    margin-left: 13px;
+  }
+}
+
+.general-info__item {
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.general-info__price {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.general-info__price-actual {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.general-info__price-old {
+  position: relative;
+  margin-left: 37px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(72, 73, 77, 0.5);
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 123px;
+    left: -5px;
+    top: 13px;
+    border: 1px solid #A3A4A6;
+    transform: rotate(-5deg);
+  }
+}
+
+.general-info__request {
+  width: 196px;
+  height: 52px;
+  margin-top: 37px;
+  margin-left: -4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #D12136;
+}
+
+.general-info__credit {
+  width: 222px;
+  height: 52px;
+  margin-top: 16px;
+  margin-left: -4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D12136;
+}

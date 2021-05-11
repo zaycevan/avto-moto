@@ -1,0 +1,151 @@
+.reviews {
+  margin-top: 30px;
+  position: relative;
+}
+
+.reviews__button {
+  width: 189px;
+  position: absolute;
+  right: 23px;
+  top: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #D12136;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.reviews__item {
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1170px;
+    bottom: -20px;
+    left: 0;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.review__user {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #48494D;
+}
+
+.review__advantages {
+  margin-left: 19px;
+  position: relative;
+
+  &::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #D12136;
+  }
+}
+
+.review__disadvantages {
+  margin-left: 19px;
+  position: relative;
+
+  &::after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: -19px;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 18px;
+    color: #D12136;
+  }
+}
+
+.review__title {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.review__text {
+  margin: 0;
+}
+
+.review__rating {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #D12136;
+}
+
+.rating__stars {
+  margin-right: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rating__star-image {
+  margin-right: 4px;
+  fill: #BDBEC2;
+  opacity: 0.7;
+
+  &.active {
+    fill: #D12136;
+    opacity: 1;
+  }
+}
+
+.review__time {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.review__reply {
+  margin-left: 22px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #D12136;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

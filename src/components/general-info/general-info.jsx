@@ -39,8 +39,8 @@ const GeneralInfo = () => {
         </div>
         <Link className="general-info__request button" to="#">оставить заявку</Link>
         <Link className="general-info__credit button" to="#">В КРЕДИТ ОТ 11 000 ₽</Link>
-        <Slider />
       </div>
+      <Slider />
     </section>
   );
 };

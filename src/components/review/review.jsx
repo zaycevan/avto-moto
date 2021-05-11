@@ -17,8 +17,24 @@ const Review = () => {
         <p className="review__text">Взяли по трейд-ин, на выгодных условиях у дилера. Стильная внешка и крут по базовым характеристикам. Не думал, что пересяду на китайский автопром, но сейчас гоняю и понимаю, что полностью доволен.</p>
       </div>
       <div className="review__rating rating">
-        <span className="rating__stars"></span>
-        <span className="rating__text">Советует</span>
+        <div className="rating__stars">
+          <svg className="rating__star-image active" width="17" height="17">
+            <use xlinkHref="img/sprite.svg#star"></use>
+          </svg>
+          <svg className="rating__star-image active" width="17" height="17">
+            <use xlinkHref="img/sprite.svg#star"></use>
+          </svg>
+          <svg className="rating__star-image active" width="17" height="17">
+            <use xlinkHref="img/sprite.svg#star"></use>
+          </svg>
+          <svg className="rating__star-image" width="17" height="17">
+            <use xlinkHref="img/sprite.svg#star"></use>
+          </svg>
+          <svg className="rating__star-image" width="17" height="17">
+            <use xlinkHref="img/sprite.svg#star"></use>
+          </svg>
+        </div>
+        <p className="rating__text">Советует</p>
       </div>
       <span className="review__time">1 минуту назад</span>
       <button className="review__reply">Ответить</button>

@@ -1,0 +1,30 @@
+.characteristics {
+  max-width: 565px;
+  margin-top: 31px;
+}
+
+.characteristics__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.characteristics__item {
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #D7D9DF;
+}
+
+.characteristics__item-value {
+  color: #000000;
+}
+
+

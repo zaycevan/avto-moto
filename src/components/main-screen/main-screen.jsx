@@ -10,7 +10,7 @@ const MainScreen = () => {
     <>
       <PageHeader />
       <main className="page-main">
-        <h1 className="visually-hidden">AVTO-MOTO</h1>
+        <h1 className="visually-hidden">AVTO MOTO</h1>
         <GeneralInfo />
         <Tabs />
       </main>

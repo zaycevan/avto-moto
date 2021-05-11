@@ -6,8 +6,8 @@ const Contacts = () => {
       <ul className="contacts__list">
         <li className="contacts__item">
           <p className="contacts__item-name">Адрес</p>
-          <p className="contacts__item-value">Санкт-Петербург,
-набережная реки Карповки, дом 5</p>
+          <p className="contacts__item-value">Санкт-Петербург,</p>
+          <p className="contacts__item-value">набережная реки Карповки, дом 5</p>
         </li>
         <li className="contacts__item">
           <p className="contacts__item-name">Режим работы</p>
@@ -23,7 +23,6 @@ const Contacts = () => {
         </li>
       </ul>
       <div className="contacts__map">
-        Карта
       </div>
     </div>
   );
