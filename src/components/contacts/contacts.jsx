@@ -22,7 +22,7 @@ const Contacts = () => {
           <a className="contacts__item-value" href="mailto:info@avto-moto.ru">info@avto-moto.ru</a>
         </li>
       </ul>
-      <div className="contacts__map">
+      <div className="contacts__map" id="map">
       </div>
     </div>
   );

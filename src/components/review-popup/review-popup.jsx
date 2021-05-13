@@ -3,7 +3,7 @@ import ReviewStar from '../review-star/review-star';
 
 const ReviewPopup = () => {
   return (
-    <section className="review-popup popup-hide">
+    <section className="review-popup block-hide">
       <div className="review-popup__wrapper">
         <h2 className="review-popup__title">Оставить отзыв</h2>
         <form className="review-popup__form form" method="post">

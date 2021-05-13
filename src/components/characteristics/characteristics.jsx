@@ -2,7 +2,7 @@ import React from 'react';
 
 const Сharacteristics = () => {
   return (
-    <div className="characteristics">
+    <div className="characteristics block-hide">
       <ul className="characteristics__list">
         <li className="characteristics__item">
           <span className="characteristics__item-name">Трансмиссия</span>

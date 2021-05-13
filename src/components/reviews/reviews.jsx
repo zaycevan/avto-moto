@@ -4,7 +4,7 @@ import ReviewPopup from '../review-popup/review-popup';
 
 const Reviews = () => {
   return (
-    <div className="reviews">
+    <div className="reviews block-hide">
       <button className="reviews__button button">оставить отзыв</button>
       <ul className="reviews__list">
         <Review />

@@ -1,7 +1,7 @@
 import React from 'react';
 import Characteristics from '../characteristics/characteristics';
-// import Reviews from '../reviews/reviews';
-// import Contacts from '../contacts/contacts';
+import Reviews from '../reviews/reviews';
+import Contacts from '../contacts/contacts';
 
 const Tabs = () => {
   return (
@@ -19,8 +19,8 @@ const Tabs = () => {
       </ul>
       <div className="tabs__content">
         <Characteristics />
-        {/* <Reviews /> */}
-        {/* <Contacts /> */}
+        <Reviews />
+        <Contacts />
       </div>
     </section>
   );
