@@ -13,8 +13,6 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
-
-
 }
 
 .contacts__item {
@@ -43,8 +41,17 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 431px;
   height: 271px;
   margin-top: 20px;
-  border: 1px solid #000000;
+}
+
+.contacts__map-image {
+  position: absolute;
+  width: 431px;
+  height: 271px;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
