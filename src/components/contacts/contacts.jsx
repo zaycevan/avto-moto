@@ -2,6 +2,7 @@ import React from 'react';
 import ContactMap from '../contact-map/contact-map';
 
 const Contacts = () => {
+
   return (
     <div className="contacts">
       <ul className="contacts__list">

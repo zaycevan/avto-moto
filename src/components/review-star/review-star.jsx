@@ -1,16 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ReviewStar = () => {
+const ReviewStar = (props) => {
+  const {
+    starValue,
+    onChange,
+    rating,
+  } = props;
+
   return (
     <>
-      <label htmlFor="1-stars" className="form__rating-label">
+      <input
+        onChange={onChange}
+        className="form__rating-input visually-hidden"
+        name="rating" id={`star-${starValue}`} value={starValue} type="radio" checked = {+starValue === +rating}/>
+      <label htmlFor={`star-${starValue}`} className="form__rating-label">
         <svg className="form__star-image" width="28" height="28">
           <use xlinkHref="img/sprite.svg#star"></use>
         </svg>
       </label>
-      <input className="form__rating-input visually-hidden" name="1-stars" id="1-stars" type="radio"/>
     </>
   );
+};
+
+ReviewStar.propTypes = {
+  starValue: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
+  rating: PropTypes.string,
 };
 
 export default ReviewStar;
