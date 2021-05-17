@@ -48,15 +48,12 @@ const ReviewPopup = (props) => {
     onSubmit(reviewWithDate);
     onCloseButtonClick();
     localStorage.clear();
-    console.log(`store`, localStorage);
   };
 
   const handleCloseButtonClick = () => {
     Object.keys(reviewStructure).forEach((item) => {
       if (reviewRef.current[item]) {
-        console.log(reviewRef.current[item]);
         localStorage.setItem(item, reviewRef.current[item]);
-        console.log(`Saved!`);
       }
     });
     onCloseButtonClick();

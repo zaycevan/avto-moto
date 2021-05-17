@@ -18,8 +18,8 @@
 .review-popup__wrapper {
   position: relative;
   box-sizing: border-box;
-  width: 697px;
-  height: 414px;
+  max-width: 697px;
+  max-height: 414px;
   margin: 50vh auto;
   padding: 30px;
   transform: translateY(-50%);
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   input:focus,
   textarea:focus {
@@ -52,7 +52,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .form__inputs-wrapper--left {
@@ -90,7 +90,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .form__input-comment {

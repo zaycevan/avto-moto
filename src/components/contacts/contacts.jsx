@@ -26,7 +26,6 @@ const Contacts = () => {
       </ul>
       <div className="contacts__map" id="map">
         <ContactMap />
-        <img className="contacts__map-image" src="img/map.svg" width="431" height="271" alt="карта"/>
       </div>
     </div>
   );

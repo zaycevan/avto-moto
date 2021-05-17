@@ -12,6 +12,12 @@ const Reviews = (props) => {
     onReviewEnterClick,
   } = props;
 
+  if (reviewPopupShown) {
+    document.body.style.overflow = `hidden`;
+  } else {
+    document.body.style.overflow = `visible`;
+  }
+
   return (
     <div className="reviews">
       <button
