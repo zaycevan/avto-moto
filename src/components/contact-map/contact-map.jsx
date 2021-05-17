@@ -1,5 +1,5 @@
 import React from 'react';
-import {Map2, Marker, MarkerLayout} from 'yandex-map-react';
+import {Map, Marker, MarkerLayout} from 'yandex-map-react';
 import {LocationCoordinates} from '../../const';
 
 const ContactMap = () => {
@@ -9,7 +9,7 @@ const ContactMap = () => {
   };
 
   return (
-    <Map2 width={`100%`} height={`100%`} state={mapState} center={[latitude, longitude + 0.005]} zoom={14}>
+    <Map width={`100%`} height={`100%`} state={mapState} center={[latitude, longitude + 0.005]} zoom={14}>
       <Marker lat={latitude} lon={longitude}>
         <MarkerLayout>
           <div className="pointer">
@@ -19,7 +19,7 @@ const ContactMap = () => {
           </div>
         </MarkerLayout>
       </Marker>
-    </Map2>
+    </Map>
   );
 };
 
