@@ -22,7 +22,7 @@ const Reviews = (props) => {
     <div className="reviews">
       <button
         className="reviews__button button"
-        onClick={onReviewEnterClick}>оставить отзыв</button>
+        onClick={onReviewEnterClick} aria-label="Оставить отзыв">оставить отзыв</button>
       <ul className="reviews__list">
         {reviews.map((item) => (
           <Review

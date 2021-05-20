@@ -44,7 +44,7 @@ const Review = (props) => {
         <p className="rating__text">Советует</p>
       </div>
       <span className="review__time">{formatCommentDate(date)}</span>
-      <button className="review__reply">Ответить</button>
+      <button className="review__reply"aria-label="Ответить">Ответить</button>
     </li>
   );
 };

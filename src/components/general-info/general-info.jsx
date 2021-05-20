@@ -37,8 +37,8 @@ const GeneralInfo = () => {
           <span className="general-info__price-actual">2 300 000 ₽</span>
           <span className="general-info__price-old">2 400 000 ₽</span>
         </div>
-        <Link className="general-info__request button" to="#">оставить заявку</Link>
-        <Link className="general-info__credit button" to="#">В КРЕДИТ ОТ 11 000 ₽</Link>
+        <Link className="general-info__request button" to="#" aria-label="Оставить заявку">оставить заявку</Link>
+        <Link className="general-info__credit button" to="#" aria-label="Взять в кредит">В КРЕДИТ ОТ 11 000 ₽</Link>
       </div>
       <Slider />
     </section>

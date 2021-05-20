@@ -17,7 +17,7 @@ const Contacts = () => {
         </li>
         <li className="contacts__item">
           <p className="contacts__item-name">Телефон</p>
-          <a className="contacts__item-value" href="tel: 88003335599">8 (800) 333-55-99</a>
+          <a className="contacts__item-value" href="tel:88003335599">8 (800) 333-55-99</a>
         </li>
         <li className="contacts__item">
           <p className="contacts__item-name">E-mail</p>

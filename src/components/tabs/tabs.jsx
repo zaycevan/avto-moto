@@ -43,7 +43,8 @@ const Tabs = (props) => {
               className={`tabs__item-button button
                 ${item === activeTab ? `active` : ``}`}
               data-id={item}
-              onClick={handleTabButtonClick}>
+              onClick={handleTabButtonClick}
+              aria-label={`Показать вкладку ${item}`}>
               {item}
             </button>
           </li>

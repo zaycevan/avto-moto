@@ -125,10 +125,10 @@ const ReviewPopup = (props) => {
               </label>
             </div>
           </div>
-          <button className="form__submit button" type="submit">оставить отзыв</button>
+          <button className="form__submit button" type="submit" aria-label="Оставить отзыв">оставить отзыв</button>
         </form>
         <button className="review-popup__close"
-          onClick={handleCloseButtonClick}>
+          onClick={handleCloseButtonClick} aria-label="Закрыть окно с отзывом">
           <svg className="review-popup__close-image" width="15" height="15">
             <use xlinkHref="img/sprite.svg#close"></use>
           </svg>
