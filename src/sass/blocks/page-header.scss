@@ -5,17 +5,18 @@
 }
 
 .page-header__wrapper {
-  max-width: 1190px;
+  max-width: 1240px;
   min-height: 84px;
   margin: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .page-header__logo {
   margin: auto;
-  margin-left: 21px;
+  margin-left: 46px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +50,7 @@
 .main-nav__list {
   height: 100%;
   margin: auto;
-  margin-right: 0;
+  margin-right: 24px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
