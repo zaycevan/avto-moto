@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .page-header__logo {
@@ -49,6 +49,7 @@
 
 .main-nav__list {
   height: 100%;
+  max-width: 608px;
   margin: auto;
   margin-right: 24px;
   display: flex;
