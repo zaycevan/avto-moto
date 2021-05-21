@@ -1,13 +1,14 @@
 .reviews {
   margin-top: 30px;
   position: relative;
+  max-width: 1170px;
 }
 
 .reviews__button {
   width: 189px;
   position: absolute;
   z-index: 2;
-  right: 23px;
+  right: 0;
   top: 0;
   font-weight: 600;
   font-size: 14px;
@@ -26,6 +27,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+
 }
 
 .reviews__item {

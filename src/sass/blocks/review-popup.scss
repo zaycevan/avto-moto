@@ -19,7 +19,7 @@
   position: relative;
   box-sizing: border-box;
   max-width: 697px;
-  max-height: 414px;
+  max-height: 418px;
   margin: 50vh auto;
   padding: 30px;
   transform: translateY(-50%);
@@ -31,6 +31,7 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 34px;
+  letter-spacing: -0.03em;
 }
 
 .review-popup__form {
@@ -55,6 +56,15 @@
   flex-wrap: nowrap;
 }
 
+.form__input-text {
+  margin-top: 24px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FF0000;
+}
+
 .form__inputs-wrapper--left {
   display: flex;
   flex-direction: column;
@@ -63,6 +73,7 @@
   flex-wrap: wrap;
 
   input {
+    position: relative;
     margin-bottom: 16px;
     padding-left: 25px;
     width: 300px;
@@ -70,19 +81,25 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
+    color: #48494D;
     background: #FFFFFF;
     border: 1px solid rgba(72, 73, 77, 0.2);
     box-sizing: border-box;
   }
 }
 
-.form__input-text {
-  margin-top: 24px;
-  margin-bottom: 3px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FF0000;
+.form__label {
+  position: relative;
+}
+
+.form__input-name:invalid + span {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  position: absolute;
+  font-size: 13px;
+  line-height: 20px;
+  color: #D12136;
 }
 
 .form__inputs-wrapper--right {
@@ -95,16 +112,28 @@
 
 .form__input-comment {
   margin-bottom: 13px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-top: 15px;
   width: 300px;
   height: 118px;
+  resize: none;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
+  color: #48494D;
   background: #FFFFFF;
   border: 1px solid rgba(72, 73, 77, 0.2);
   box-sizing: border-box;
+
+  &:invalid + span {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    position: absolute;
+    font-size: 13px;
+    line-height: 20px;
+    color: #D12136;
+  }
 }
 
 .form__rating {
@@ -160,7 +189,8 @@
 
 .form__submit {
   margin: auto;
-  margin-top: 19px;
+  margin-top: 21px;
+  margin-bottom: 4px;
   width: 189px;
   height: 52px;
   font-weight: 600;

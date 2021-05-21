@@ -91,7 +91,8 @@ const ReviewPopup = (props) => {
             <div className="form__inputs-wrapper--left">
               <p className="form__input-text">Пожалуйста, заполните поле</p>
               <label className="form__label" htmlFor="inputName">
-                <input className="form__input-name" id="inputName" name="userName" value={review.userName || ``} onChange={onInputChange} type="text" required autoFocus placeholder="* Имя"/>
+                <input className="form__input-name" id="inputName" name="userName" value={review.userName || ``} onChange={onInputChange} type="text" required autoFocus placeholder="Имя"/>
+                <span style={{display: `${review.userName ? `none` : ``}`}}>*</span>
               </label>
               <label className="form__label" htmlFor="inputAdvantages">
                 <input className="form__input-advantages" id="inputAdvantages" name="advantages"
@@ -121,7 +122,8 @@ const ReviewPopup = (props) => {
               <label className="form__label" htmlFor="inputComment">
                 <textarea className="form__input-comment" id="inputComment" name="comment"
                   value={review.comment || ``} onChange={onInputChange}
-                  required placeholder="* Комментарий" minLength={5}></textarea>
+                  required placeholder="Комментарий" minLength={5}></textarea>
+                <span style={{display: `${review.comment ? `none` : ``}`}}>*</span>
               </label>
             </div>
           </div>
